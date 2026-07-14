@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export const connectDB = async (): Promise<void> => {
   try {
-    const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/jobtrack';
+    const mongoURI = process.env.MONGODB_URI || 'mongodb://[IP_ADDRESS]/jobtrack';
     
     mongoose.connection.on('connected', () => {
       console.log('MongoDB successfully connected');
