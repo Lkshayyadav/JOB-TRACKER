@@ -38,7 +38,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-
+console.log("FRONTEND URL: ",process.env.FRONTEND_URL)
 // API Routes
 app.get('/api/health', (req: Request, res: Response) => {
   res.status(200).json({
