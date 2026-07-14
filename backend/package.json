@@ -2,11 +2,11 @@
   "name": "jobtrack-backend",
   "version": "1.0.0",
   "description": "JobTrack backend foundation",
-  "type": "module",
-  "main": "server.ts",
+
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "start": "node server.ts",
+    "start": "node dist/server.js ",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "dependencies": {

@@ -4,7 +4,7 @@ dotenv.config();
 
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
-import { connectDB } from './config/db.ts';
+import { connectDB } from './config/db';
 import applicationRouter from './routes/applicationRoutes';
 import dashboardRouter from './routes/dashboardRoutes';
 import savedJobRouter from './routes/savedJobRoutes';
